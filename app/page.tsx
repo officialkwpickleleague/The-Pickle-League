@@ -1,15 +1,6 @@
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-
-// Leaflet touches window at import time, so the map must never render on
-// the server — load it client-only.
-const EventsMap = dynamic(() => import("@/components/EventsMap"), {
-  ssr: false,
-  loading: () => (
-    <div className="h-[480px] rounded-2xl bg-gray-100 animate-pulse" />
-  ),
-});
+import EventsMap from "@/components/EventsMapLoader";
 
 // Swap these for real R2-hosted photo URLs when the media bucket is set up.
 const communityPhotos = Array.from({ length: 6 }, (_, i) => i + 1);

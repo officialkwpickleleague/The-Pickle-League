@@ -1,10 +1,5 @@
-import dynamic from "next/dynamic";
 import Footer from "@/components/Footer";
-
-const EventsMap = dynamic(() => import("@/components/EventsMap"), {
-  ssr: false,
-  loading: () => <div className="h-[480px] rounded-2xl bg-gray-100 animate-pulse" />,
-});
+import EventsMap from "@/components/EventsMapLoader";
 
 export default function EventsPage() {
   return (
