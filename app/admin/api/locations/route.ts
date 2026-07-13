@@ -18,13 +18,15 @@ export async function POST(request: Request) {
 
   const addedBy = request.headers.get("Cf-Access-Authenticated-User-Email") ?? "unknown";
 
-  const body = await request.json<{
+  type LocationInput = {
     name: string;
     address: string;
     latitude: number;
     longitude: number;
     description?: string;
-  }>();
+  };
+
+  const body = (await request.json()) as LocationInput;
 
   if (!body.name || !body.address || !body.latitude || !body.longitude) {
     return new Response("Missing required fields", { status: 400 });
