@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative h-[80vh] flex items-center justify-center text-center text-white bg-gray-800">
-        {/* Replace with a real hero photo (bg-[url('...')] or next/image fill) */}
+        {/* Replace this div with a real hero photo later */}
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 px-6">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">The Pickle League</h1>
