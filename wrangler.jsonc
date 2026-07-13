@@ -1,21 +1,23 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "pickle-league",
-  "main": ".open-next/worker.js",
-  "compatibility_date": "2026-07-01",
-  "compatibility_flags": ["nodejs_compat"],
-  "assets": {
-    "directory": ".open-next/assets"
-  },
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "pickle-league-db",
-      "database_id": "REPLACE_WITH_ID_FROM_WRANGLER_D1_CREATE"
-    }
-  ],
-  // Uncomment once you create an R2 bucket for photos/media:
-  // "r2_buckets": [
-  //   { "binding": "MEDIA", "bucket_name": "pickle-league-media" }
-  // ]
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "pickle-league",
+	"main": ".open-next/worker.js",
+	"compatibility_date": "2026-07-01",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"assets": {
+		"directory": ".open-next/assets"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "pickle-league-db",
+			"database_id": "8905ed51-ed20-4351-b567-5b7adf2012a2"
+		},
+	],
+	// Uncomment once you create an R2 bucket for photos/media:
+	// "r2_buckets": [
+	//   { "binding": "MEDIA", "bucket_name": "pickle-league-media" }
+	// ]
 }
