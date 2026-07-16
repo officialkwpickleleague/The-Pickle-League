@@ -1,7 +1,5 @@
 import { getCloudflareContext } from "@opennextjs/cloudflare";
 
-export const runtime = "edge";
-
 // POST /admin/api/locations — adds a new venue.
 //
 // This route is not protected by anything in code. It relies entirely on
