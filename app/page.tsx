@@ -15,7 +15,7 @@ export default function HomePage() {
         <div className="relative z-10 px-6">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">The Pickle League</h1>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Weekly social pickleball nights across the KW Region — no experience needed.
+            Monthly social pickleball nights across Southwestern Ontario. No experience needed. Just good pickling, good times. 
           </p>
           <Link
             href="/events"
@@ -29,10 +29,9 @@ export default function HomePage() {
       {/* Intro blurb */}
       <section className="max-w-3xl mx-auto text-center px-6 py-16">
         <p className="text-lg text-gray-600 leading-relaxed">
-          The Pickle League runs weekly Social Nights that rotate between venues around
-          Kitchener-Waterloo — pickleball, food, and drinks, all in one evening. Every skill
-          level is welcome, and we occasionally host special events on top of the regular
-          schedule.
+          The Pickle League runs monthly Social Nights that rotate between venues around
+          Kitchener, Waterloo, Cambridge, and Guelph. Pickleball, food, drinks, giveaways all in one evening. Every age and skill
+          level is welcome. 
         </p>
       </section>
 
@@ -70,7 +69,7 @@ export default function HomePage() {
           </p>
           <h3 className="text-2xl font-bold text-brand mb-4">Our mission</h3>
           <p className="text-gray-600 leading-loose mb-8">
-            We strive to create a welcoming community for players of all skill levels.
+            We strive to make each event a night to remember where everyone leaves with something. 
             Regardless of where you&apos;re starting from, we&apos;re determined to help you
             leave a better player than you came.
           </p>
